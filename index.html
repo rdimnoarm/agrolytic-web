@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="/agrolytic-web/logo.jpg" />
+    <link rel="apple-touch-icon" href="/agrolytic-web/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Agrolytic CUE - Cuaderno Digital de Explotación Agrícola para gestionar tus fincas y tareas agronómicas." />
+    
+    <script>
+      // Emergency PWA Unbrick: Clear all Service Workers and Caches
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for(let registration of registrations) {
+            registration.unregister();
+          }
+        });
+      }
+      if ('caches' in window) {
+        caches.keys().then(function(names) {
+          for (let name of names) caches.delete(name);
+        });
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <title>Agrolytic CUE</title>
+    <script type="module" crossorigin src="/agrolytic-web/assets/index-nj5YN6jv.js"></script>
+    <link rel="stylesheet" crossorigin href="/agrolytic-web/assets/index-BbYK2i6_.css">
+  <link rel="manifest" href="/agrolytic-web/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/agrolytic-web/registerSW.js"></script></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
